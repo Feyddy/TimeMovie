@@ -1,0 +1,31 @@
+//
+//  BaseHearder.pch
+//  TimeMovie
+//
+//  Created by Mac on 15/8/24.
+//  Copyright (c) 2015年 huiwenjiaoyu. All rights reserved.
+//
+
+#ifndef TimeMovie_BaseHearder_pch
+#define TimeMovie_BaseHearder_pch
+
+/*
+ 1.创建，在IOS----other中创建pch文件
+ 2.在pch文件中一定要写上注释，加入宏定义
+ 3.在Build Setting中的App LLVM 6.1 Language 中的Prefix Header中的寿面空白处双加，然后把创建的pch文件拉入，加入路径，在回车结束
+ */
+
+
+//屏幕的宽高
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//SDWebImage
+#import "UIImageView+WebCache.h"
+
+#import "UIViewExt.h"
+
+//读取JSON数据
+#import "MovieJSON.h"
+
+#endif
